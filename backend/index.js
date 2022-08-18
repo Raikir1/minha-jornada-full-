@@ -64,7 +64,7 @@ async function main() {
   app.get("/pontuacoes", async function (req, res) {
     const itens = await collection
       .find()
-      .sort({ pontos: -1 })
+      .sort({ pontos: 1 })
       .limit(3)
       .toArray();
 
