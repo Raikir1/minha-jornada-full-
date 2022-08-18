@@ -65,7 +65,7 @@ async function main() {
     const itens = await collection
       .find()
       .sort({ pontos: 1 })
-      .limit(5)
+      .limit(10)
       .toArray();
 
     res.send(itens);
